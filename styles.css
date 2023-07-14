@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(207, 154, 144, 0.6);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    height: fit-content;
+    background-color: rgb(184, 140, 171);
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgb(42, 61, 42);
+}
+
+h1 {
+    font-weight: 800;
+    text-shadow: 5px 10px 10px darkseagreen;
+}
+
+.anime-btn {
+    font-size: 1.2em;
+    color: antiquewhite;
+    background-color: darkgreen;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.anime-btn:hover {
+    box-shadow: 0 5px 5px darkgreen;
+    transform: scale(1.1);
+    transition: all 1s ease-out;
+}
+
+.active-btn {
+    font-size: 1.2em;
+    color: black;
+    background-color: azure;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: not-allowed;
+    margin-bottom: 20px;
+}
+
+#anime-container {
+    width: 60%;
+    margin: 20px auto 0 auto;
+    display: none;
+}
+
+#anime-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid darkgreen;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+#anime-name {
+    font-size: 1.2em;
+    color: antiquewhite;
+    background-color: darkgreen;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0;
+    }
+
+    #error-message {
+        color: red;
+        font-size: 1.5em;
+        display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+        #anime-container {
+            width: 95%;
+        }
+
+        #anime-image {
+            width: 70%;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+    #anime-image {
+        width: 80%;
+    }
+}
+
+    @media only screen and (max-width: 500px) {
+        #anime-image {
+            width: 100%;
+        }
+    }
