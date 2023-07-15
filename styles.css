@@ -78,6 +78,16 @@ h1 {
     padding: 10px 0;
     }
 
+    .download {
+        text-decoration: none;
+        color: blue;
+        margin-bottom: 10px;
+    }
+
+    .download:hover {
+        color: brown;
+    }
+
     #error-message {
         color: red;
         font-size: 1.5em;
